@@ -4,19 +4,17 @@ using UnityEngine;
 
 public class DeathZone : MonoBehaviour
 {
-
-    LostBall ls;
-    // Start is called before the first frame update
-    private void OnTriggerEnter2D(Collider2D collision)
+    void Start()
     {
-        ls = collision.GetComponent<LostBall>();
-        if (ls != null) 
-        {
-            ls.Onlost();
-        }
-        else 
-        {
-            Destroy(collision);
-        }
+        
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        LostBall ball=other.gameObject.GetComponent<LostBall>();
+        if (ball!=null)
+            ball.OnLost();
+        else
+            Destroy(other.gameObject);
     }
 }

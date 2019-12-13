@@ -4,36 +4,43 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public int PlayerPoints = 0;
-    public int Lifes = 3;
-    public int ladrillos;
+    //public float ballSpeed;
+    int bricks = 0;
+    public static GameManager instance;
+    private int score;
+    int playerLives;
+    void Start()
+    {
+        score = 0;
+        playerLives = 3;       
+    }
 
-
-    public static GameManager instance = null;
-
-    void Awake()
+    private void Awake()
     {
         if (instance == null)
-        {
             instance = this;
-            DontDestroyOnLoad(this.gameObject);
-        }
-
         else
-        {
             Destroy(this.gameObject);
-        }
     }
-   public bool LoseLife() 
+
+    public void AddPoints(int points)
     {
-        Lifes--;
-        Debug.Log(Lifes);
-        return Lifes > 0;
+        score += points;
     }
-    public void AddPoints(int amount) 
+    public bool PlayerLoseLife()
     {
-        PlayerPoints += amount;
+        playerLives--;
+        Debug.Log(playerLives);
+        return (playerLives>0);
     }
-    public void AddBrick() { ladrillos++; } 
- public void BrickDestroyed() { ladrillos--; }
+
+    public void AddBrick()
+    {
+        bricks++;
+    }
+
+    public void BrickDestroyed()
+    {
+        bricks--;
+    }
 }

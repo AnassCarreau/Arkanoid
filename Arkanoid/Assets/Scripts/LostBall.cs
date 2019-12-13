@@ -4,26 +4,30 @@ using UnityEngine;
 
 public class LostBall : MonoBehaviour
 {
-    public Transform SpawnPoint;
-    Rigidbody2D rb;
-    GameManager mn;
-    GameObject padre;
+    public Transform spawnpoint;
+    GameObject plyr;
     // Start is called before the first frame update
     void Start()
     {
-        padre = SpawnPoint.parent.gameObject;
-        rb = GetComponent<Rigidbody2D>();
+        plyr = transform.parent.gameObject;
     }
 
     // Update is called once per frame
-  public  void Onlost() 
+    void Update()
     {
-       if(mn.LoseLife()) 
+
+    }
+    public void OnLost()
+    {
+        if (GameManager.instance.PlayerLoseLife())
         {
-            Destroy(this.gameObject);
+            Rigidbody2D rb = GetComponent<Rigidbody2D>();
+
+            rb.velocity = Vector2.zero;
+            transform.SetParent(plyr.transform);
+            transform.position = spawnpoint.position;
         }
-        rb.isKinematic = true;
-        transform.SetParent(padre.transform);
-        transform.position = SpawnPoint.position;
+        else
+            Destroy(this.gameObject);        
     }
 }

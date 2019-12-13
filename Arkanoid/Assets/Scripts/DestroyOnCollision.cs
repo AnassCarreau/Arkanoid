@@ -6,18 +6,18 @@ public class DestroyOnCollision : MonoBehaviour
 {
     public int GolpesAntesDeMorir;
     public int PuntosGanados;
-    public GameObject powerup;
+  
+
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Ball"))
-        {
+        if (GolpesAntesDeMorir > 1)
             GolpesAntesDeMorir--;
-            if (GolpesAntesDeMorir == 0) 
-            {
-                Instantiate(powerup);
-                Destroy(this);
-            }
+        else
+        {
+            GameManager.instance.AddPoints(PuntosGanados);
+            Destroy(this.gameObject);
         }
+        Debug.Log("collision");
     }
 }
