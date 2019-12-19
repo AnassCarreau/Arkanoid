@@ -28,4 +28,11 @@ public class Ball : MonoBehaviour
         }
 
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        PlayerController pc = collision.gameObject.GetComponent<PlayerController>();
+        if (pc != null)
+            rb.velocity = new Vector2(rb.position.x - pc.gameObject.transform.position.x, pc.gameObject.transform.localScale.x / 2).normalized*speed;
+    }
 }
