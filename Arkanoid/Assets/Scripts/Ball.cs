@@ -9,7 +9,6 @@ public class Ball : MonoBehaviour
     Rigidbody2D rb;
     PlayerController pc;
     
-    // Start is called before the first frame update
     void Start()
     {
         pc = transform.parent.GetComponent<PlayerController>(); 
@@ -19,15 +18,13 @@ public class Ball : MonoBehaviour
        
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Return) && rb.isKinematic)
         {
             transform.parent = null;
             rb.isKinematic = false;
-            rb.velocity = new Vector2(1f, 1f).normalized;
-            rb.velocity *= speed;
+            rb.velocity = new Vector2(Random.Range(-1f,1f), 1f).normalized*speed;
         }
 
     }

@@ -16,7 +16,7 @@ public class Enlarge : MonoBehaviour
 
         transform.localScale = new Vector2((transform.localScale.x * 5 / 4), transform.localScale.y);
 
-        transform.GetChild(0).localScale = new Vector2((transform.localScale.x * 16 / 25), transform.localScale.y);   
+        transform.GetChild(0).localScale = new Vector2((transform.localScale.x * 16 / 25), transform.localScale.y);
     }
 
     void OnDisable()

@@ -167,27 +167,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NES - Arkanoid - Vaus_0
-      rect:
-        serializedVersion: 2
-        x: 86
-        y: 28
-        width: 35
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0af2b5ed23cee4a43b9519edd2dc8f7c
-      internalID: -9218981334865537906
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Fire
       rect:
         serializedVersion: 2
@@ -217,7 +196,7 @@ TextureImporter:
         width: 32
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
