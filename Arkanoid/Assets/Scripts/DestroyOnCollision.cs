@@ -6,9 +6,8 @@ public class DestroyOnCollision : MonoBehaviour
 {
     public int GolpesAntesDeMorir;
     public int PuntosGanados;
+    public GameObject DieObject;
   
-
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (GolpesAntesDeMorir > 1)
@@ -16,8 +15,10 @@ public class DestroyOnCollision : MonoBehaviour
         else
         {
             GameManager.instance.AddPoints(PuntosGanados);
+            if (DieObject!=null)
+                Instantiate(DieObject, transform.position, Quaternion.identity);
             Destroy(this.gameObject);
         }
-        Debug.Log("collision");
+        //Debug.Log("collision");
     }
 }

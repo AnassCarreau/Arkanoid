@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class Laser : MonoBehaviour
 {
-   public  GameObject bala;
-    // Start is called before the first frame update
+    public Sprite attackmode;
+    public GameObject fire;
+    void OnEnable()
+    {
+        GetComponent<SpriteRenderer>().sprite = attackmode;
+    }
 
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Backspace))
-        {
-            Instantiate(bala);
-        }
-
+        if (Input.GetKeyDown(KeyCode.Space))
+            Instantiate (fire, transform.position, Quaternion.identity);
     }
 }

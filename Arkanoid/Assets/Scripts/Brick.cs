@@ -9,11 +9,6 @@ public class Brick : MonoBehaviour
         GameManager.instance.AddBrick();
     }
 
-    void Update()
-    {
-        
-    }
-
     private void OnDestroy()
     {
         GameManager.instance.BrickDestroyed();

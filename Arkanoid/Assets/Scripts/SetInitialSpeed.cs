@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class SetInitialSpeed : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public Vector2 speed;
+
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        rb.velocity = speed;
     }
 }

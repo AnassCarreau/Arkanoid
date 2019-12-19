@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class DeathZone : MonoBehaviour
 {
-    void Start()
-    {
-        
-    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         LostBall ball=other.gameObject.GetComponent<LostBall>();
-        if (ball!=null)
+        if (ball != null)
+        {
             ball.OnLost();
+            //Debug.Log("Ha!");
+        }
+            
         else
             Destroy(other.gameObject);
     }

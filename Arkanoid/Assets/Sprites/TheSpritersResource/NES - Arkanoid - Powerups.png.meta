@@ -1,7 +1,61 @@
 fileFormatVersion: 2
 guid: 43c0e222f5320574ebcd630a99d99b8e
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -8786572371010318940
+    second: Laser-1
+  - first:
+      213: 7392870639888133409
+    second: NES - Arkanoid - Powerups_1
+  - first:
+      213: 3727509079521024552
+    second: NES - Arkanoid - Powerups_2
+  - first:
+      213: 4299919462055785934
+    second: NES - Arkanoid - Powerups_3
+  - first:
+      213: -3027179821232870818
+    second: NES - Arkanoid - Powerups_4
+  - first:
+      213: 669128583916225500
+    second: NES - Arkanoid - Powerups_5
+  - first:
+      213: -660398227224692408
+    second: NES - Arkanoid - Powerups_6
+  - first:
+      213: 1904054197787422710
+    second: Enlarge-1
+  - first:
+      213: 7385172512017526402
+    second: Enlarge-2
+  - first:
+      213: -8865693245800375524
+    second: Enlarge-3
+  - first:
+      213: 6322308214821625784
+    second: Enlarge-4
+  - first:
+      213: -8109913205352813034
+    second: Enlarge-5
+  - first:
+      213: 8724911379405900893
+    second: Enlarge-6
+  - first:
+      213: 79315177135196652
+    second: Laser-2
+  - first:
+      213: 1787503579982975794
+    second: Laser-3
+  - first:
+      213: -8424093859669138272
+    second: Laser-4
+  - first:
+      213: -1002616449292528655
+    second: Laser-5
+  - first:
+      213: 3549973382307833783
+    second: Laser-6
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,12 +94,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 8
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -84,7 +138,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Enlarge-1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 25
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6347e60096b816b42865a9a25f497f34
+      internalID: 1904054197787422710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enlarge-2
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 25
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41bc9591a0b173548a32333b15eb5e98
+      internalID: 7385172512017526402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enlarge-3
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 25
+        width: 17
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98dca1eb5601969448af1d7441ef702e
+      internalID: -8865693245800375524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enlarge-4
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 25
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b02bc3d8da7b91499f2c8765a038f99
+      internalID: 6322308214821625784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enlarge-5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 25
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed540d931831c984d948a72ca67def35
+      internalID: -8109913205352813034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enlarge-6
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 25
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7962bba255b51e49b4f29512a31911d
+      internalID: 8724911379405900893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser-1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 17
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56a39803a3ae57444a492a587a72c4cd
+      internalID: -8786572371010318940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser-2
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 17
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06923691414ab474abbdb238b4d46a3d
+      internalID: 79315177135196652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser-3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 17
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5de773699e7c4994db41f12d264bd4c8
+      internalID: 1787503579982975794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser-4
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 17
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b70d8619414da8c479fe04215c97efce
+      internalID: -8424093859669138272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser-5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 17
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a57af6e50cf395841bc916aa6160f5b8
+      internalID: -1002616449292528655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser-6
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 17
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1700a2cd962d8944382fc60b55f5f1b5
+      internalID: 3549973382307833783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

@@ -26,6 +26,7 @@ public class LostBall : MonoBehaviour
             rb.velocity = Vector2.zero;
             transform.SetParent(plyr.transform);
             transform.position = spawnpoint.position;
+            rb.isKinematic = true;
         }
         else
             Destroy(this.gameObject);        

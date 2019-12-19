@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class Enlarge : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    Sprite regular;
+
+    private void Start()
     {
-        transform.localScale=new Vector3(transform.localScale.x * 1.25f,transform.localScale.y,transform.localScale.z); 
+        regular = GetComponent<Sprite>();
+    }
+    void OnEnable()
+    {
+        GetComponent<SpriteRenderer>().sprite = regular;
+
+        transform.localScale = new Vector2((transform.localScale.x * 5 / 4), transform.localScale.y);
+
+        transform.GetChild(0).localScale = new Vector2((transform.localScale.x * 16 / 25), transform.localScale.y);   
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnDisable()
     {
-        
+        transform.localScale = new Vector2((transform.localScale.x * 4 / 5), transform.localScale.y);
+
+        transform.GetChild(0).localScale = new Vector2((transform.localScale.x * 25 / 16), transform.localScale.y);
     }
 }
