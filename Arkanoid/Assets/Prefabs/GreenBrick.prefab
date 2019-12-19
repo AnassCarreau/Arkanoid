@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4916227894709152311}
   - component: {fileID: -6031766235120515874}
   m_Layer: 10
-  m_Name: OrangeBrick
+  m_Name: GreenBrick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: -1135050779
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 688690366150cb544aadcb50bd3f78d1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 13add66cbd0872f44a179d0838c9c41d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -95,8 +95,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d783d0af24b32e34994d848fe68fa561, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GolpesAntesDeMorir: 2
-  PuntosGanados: 60
+  GolpesAntesDeMorir: 4
+  PuntosGanados: 80
   DieObject: {fileID: 0}
 --- !u!61 &4916227894709152311
 BoxCollider2D:
