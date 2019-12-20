@@ -6,7 +6,6 @@ public class Ball : MonoBehaviour
 {
     //Declaramos variables publicas primero
     public float speed;
-    public Transform spawnpoint;
     Rigidbody2D rb;
     PlayerController pc;
     
