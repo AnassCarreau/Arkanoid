@@ -9,19 +9,20 @@ public class UIManager : MonoBehaviour
     public Text FinishText;
     public Text ScoreText;
     public Image [] size;
-    
+    //Al crearse el UI saluda al GameManger y este le dice que vidas y puntuacion tiene ya de paso
+    //Se desactiva el panel final
     void Start()
     {
         GameManager.instance.SetUIManager(this);
         FinishPanel.SetActive(false);
         
     }
-
+    //Se actualiza la puntuacion 
     public void UpdateScore(int points)
     {
         ScoreText.text = points.ToString();
     }
-
+    //Se actualizan las vidas (se pierde una )
     public void LifeLost()
     {
         int aux = size.Length-1;
@@ -29,7 +30,8 @@ public class UIManager : MonoBehaviour
         { aux--; }
         size[aux].enabled=false;
     }
-
+    //Al ser una nueva escena el nuevo UI necesita saber los datos que el GameManager tiene 
+    //Se restan las vidas para llegar a las que se tenian en la escena anterior 
     public void RemainingLives(int lives)
     {
         int aux = size.Length;
@@ -42,7 +44,7 @@ public class UIManager : MonoBehaviour
             aux--;
         }
     }
-
+    //Se activa el panel final y se pone un texto dependiendo de si has ganado o perdido 
     public void FinishGame(bool playerWins)
     {
         if (FinishPanel!=null) FinishPanel.SetActive(true);
