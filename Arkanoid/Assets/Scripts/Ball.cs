@@ -39,8 +39,12 @@ public class Ball : MonoBehaviour
         //Solo si choca con la pala rebotará de esta forma, si no, su material fisico bounce le servirá
         pc = collision.gameObject.GetComponent<PlayerController>();
         if (pc != null)
+        {
             //Este calculo hace que si la bola rebota en el filo de la pala las componentes x e y de su velocidad seran iguales
             //Eso significa que en el centro rebota vertical y en el filo rebota a 45 grados
-            rb.velocity = new Vector2(rb.position.x - pc.gameObject.transform.position.x, pc.gameObject.transform.localScale.x / 2).normalized*speed;
+            rb.velocity = new Vector2(rb.position.x - pc.gameObject.transform.position.x, pc.gameObject.transform.localScale.x / 2).normalized * speed;
+
+        }
+        
     }
 }

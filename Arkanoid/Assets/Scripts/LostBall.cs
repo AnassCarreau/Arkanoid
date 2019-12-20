@@ -15,7 +15,8 @@ public class LostBall : MonoBehaviour
     //Si ya no quedan vidas de jugador se destruye la bola 
     public void OnLost()
     {
-        if (GameManager.instance.PlayerLoseLife())
+       
+        if (GameManager.instance != null && GameManager.instance.PlayerLoseLife())
         {
             Rigidbody2D rb = GetComponent<Rigidbody2D>();
 

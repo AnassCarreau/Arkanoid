@@ -11,6 +11,7 @@ public class Brick : MonoBehaviour
     //LLama al destruir ladrillo del GameManager
     private void OnDestroy()
     {
+        if(GameManager.instance!=null)
         GameManager.instance.BrickDestroyed();
     }
 }

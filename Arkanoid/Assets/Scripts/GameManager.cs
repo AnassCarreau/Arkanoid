@@ -41,7 +41,8 @@ public class GameManager : MonoBehaviour
         if (playerLives > 0)
         {
             score += points;
-            uim.UpdateScore(score);
+            if (uim != null)
+                uim.UpdateScore(score);
         }
     }
 
@@ -51,11 +52,14 @@ public class GameManager : MonoBehaviour
         if (bricks > 0)
         {
             playerLives--;
-            uim.LifeLost();
-
-            if (playerLives <= 0)
+            if (uim != null)
             {
-                LevelFinished(false);
+                uim.LifeLost();
+
+                if (playerLives <= 0)
+                {
+                    LevelFinished(false);
+                }
             }
         }
         return (playerLives > 0);
@@ -90,7 +94,8 @@ public class GameManager : MonoBehaviour
             ChangeScene("Level2");
         else
         {
-            uim.FinishGame(playerWins);
+            if (uim != null)
+                uim.FinishGame(playerWins);
         }
     }
 }

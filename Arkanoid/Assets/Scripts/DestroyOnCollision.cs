@@ -14,7 +14,10 @@ public class DestroyOnCollision : MonoBehaviour
             GolpesAntesDeMorir--;
         else
         {
-            GameManager.instance.AddPoints(PuntosGanados);
+            if (GameManager.instance != null)
+            {
+                GameManager.instance.AddPoints(PuntosGanados);
+            }
             if (DieObject!=null)
                 Instantiate<GameObject>(DieObject, transform.position, Quaternion.identity);
             Destroy(this.gameObject);

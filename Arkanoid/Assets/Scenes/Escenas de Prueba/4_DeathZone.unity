@@ -376,6 +376,7 @@ GameObject:
   - component: {fileID: 519723144}
   - component: {fileID: 519723143}
   - component: {fileID: 519723145}
+  - component: {fileID: 519723146}
   m_Layer: 0
   m_Name: DeathZone
   m_TagString: Untagged
@@ -472,6 +473,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 30, y: 2}
   m_EdgeRadius: 0
+--- !u!114 &519723146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519723142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 141b165cada73404da1ff3fd8ba80c7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &747150356
 GameObject:
   m_ObjectHideFlags: 0
@@ -630,7 +643,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 9
-  spawnpoint: {fileID: 0}
 --- !u!1 &1326658992
 GameObject:
   m_ObjectHideFlags: 0
@@ -779,7 +791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13b6eba2901de2145b38b1a7b689099e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VelocityScale: 0
+  VelocityScale: 10
 --- !u!61 &1558284915
 BoxCollider2D:
   m_ObjectHideFlags: 0
