@@ -12,6 +12,10 @@ public class DeathZone : MonoBehaviour
         {
             ball.OnLost();
         }
+        else
+        {
             Destroy(other.gameObject);
+
+        }
     }
 }
