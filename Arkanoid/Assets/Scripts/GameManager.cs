@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
+            Debug.Log("hola");
             score = 0;
             playerLives = 3;
         }
@@ -84,6 +85,9 @@ public class GameManager : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "Level1" && playerWins)
             ChangeScene("Level2");
         else
+        {
             uim.FinishGame(playerWins);
+
+        }
     }
 }
