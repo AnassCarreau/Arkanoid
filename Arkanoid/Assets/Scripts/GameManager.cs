@@ -8,22 +8,23 @@ public class GameManager : MonoBehaviour
     //public float ballSpeed;
     int bricks = 0;
     public static GameManager instance;
-    private int score=0;
-    int playerLives=3;
+    private int score;
+    int playerLives;
     UIManager uim;
-    void Start()
-    {
-            
-    }
+
 
     private void Awake()
     {
         if (instance == null)
+        {
             instance = this;
+            score = 0;
+            playerLives = 3;
+        }
         else
             Destroy(this.gameObject);
 
-      
+
     }
 
     public void AddPoints(int points)
@@ -41,7 +42,6 @@ public class GameManager : MonoBehaviour
         if (bricks > 0)
         {
             playerLives--;
-            //Debug.Log(playerLives);
             uim.LifeLost();
 
             if (playerLives <= 0)
