@@ -2233,7 +2233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 15
-  spawnpoint: {fileID: 0}
+  spawnpoint: {fileID: 1123372499}
 --- !u!1001 &797116367
 PrefabInstance:
   m_ObjectHideFlags: 0
