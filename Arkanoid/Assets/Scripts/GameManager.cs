@@ -6,22 +6,21 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     //Declaramos variables
-    int bricks = 0;
+    int bricks ;
     public static GameManager instance;
-    private int score;
-    int playerLives;
+    private int score=0;
+    int playerLives=3;
     UIManager uim;
 
-
+    
     private void Awake()
     {
         //Hacemos el singleton para que nunca pueda haber dos GameManagers
         if (instance == null)
         {
+            
             instance = this;
-            //Inicializamos las variables de juego
-            score = 0;
-            playerLives = 3;
+            DontDestroyOnLoad(this.gameObject);
         }
         else
             Destroy(this.gameObject);
