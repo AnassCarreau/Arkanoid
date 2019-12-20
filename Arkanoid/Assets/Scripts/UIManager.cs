@@ -14,7 +14,8 @@ public class UIManager : MonoBehaviour
     void Start()
     {
         GameManager.instance.SetUIManager(this);
-        FinishPanel.SetActive(false);
+        if (FinishPanel != null)
+            FinishPanel.SetActive(false);
         
     }
     //Se actualiza la puntuacion 
