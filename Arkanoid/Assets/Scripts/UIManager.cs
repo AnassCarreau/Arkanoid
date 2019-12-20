@@ -45,7 +45,7 @@ public class UIManager : MonoBehaviour
 
     public void FinishGame(bool playerWins)
     {
-        FinishPanel.SetActive(true);
+        if (FinishPanel!=null) FinishPanel.SetActive(true);
         if (playerWins)
             FinishText.text = ("Has ganado, tu vida por fin tiene sentido.");
         else
