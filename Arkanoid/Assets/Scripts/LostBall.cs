@@ -6,12 +6,13 @@ public class LostBall : MonoBehaviour
 {
     public Transform spawnpoint;
     GameObject plyr;
-    // Start is called before the first frame update
+    //Ball se hace hija de la pala sabiendo que spawnpoint siempre es hija de la pala
     void Start()
     {
-        plyr = transform.parent.gameObject;
+        plyr = spawnpoint.parent.gameObject;
     }
-
+    //La velocidad de la bola se hace nula , su posicion pasa a ser la de spawnpoint , se hace hija de la pala y  con movimiento cinematico 
+    //Si ya no quedan vidas de jugador se destruye la bola 
     public void OnLost()
     {
         if (GameManager.instance.PlayerLoseLife())

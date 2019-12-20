@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DeathZone : MonoBehaviour
 {
-    //Si la bola toca la con la deadzone
+    //Si choca un objeto con la deadzone se destruye y si es la bola ademas llama onLost
     private void OnTriggerEnter2D(Collider2D other)
     {
         LostBall ball=other.gameObject.GetComponent<LostBall>();
@@ -12,8 +12,6 @@ public class DeathZone : MonoBehaviour
         {
             ball.OnLost();
         }
-            
-        else
             Destroy(other.gameObject);
     }
 }
